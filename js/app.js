@@ -32,7 +32,7 @@ let divEl=document.getElementById('hours')
     let trEl=document.createElement('tr');
     tableEL.appendChild(trEl);
     let thEL=document.createElement("th");
-    thEL.textContent='--------'
+    thEL.textContent='Shops'
 
     trEl.appendChild(thEL);
 
