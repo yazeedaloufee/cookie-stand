@@ -1,10 +1,10 @@
 tr,th,td {
     border: 1px solid;
-    font-size: xx-large;
+    font-size: 20px;
     margin-left: 20px;
 }
 h1{
-    font-size: 70px;
+    font-size: 50px;
     color: whitesmoke;text-align: center;
 }
 a{
@@ -15,4 +15,15 @@ a{
 }
 header{
     background-color: aquamarine;
+}
+body{
+    background-color: burlywood;
+}
+form{
+    border: 5px solid black;
+    margin-top: 50px;
+}
+fieldset{
+    text-align: center;
+    font-size: 30px;
 }
