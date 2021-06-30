@@ -53,8 +53,9 @@ let divEl=document.getElementById('hours')
     trEl.appendChild(thEL2);
 }//end of header function
 //footer function
+let ftrEl=document.createElement('tr');
 function createFooter(){
-    let ftrEl=document.createElement('tr');
+    
     ftrEl.textContent=`hourly total and all for all total`
     tableEL.appendChild(ftrEl);
     for (let i=0;i< 14;i++){
@@ -116,15 +117,34 @@ let Dubai=new Shop('Dubai',38,11,3.7);
 let Paris=new Shop('Paris',38,20,2.3);
 let Lima=new Shop('Lima',16,2,4.6);
 
+let myForm=document.getElementById("myForm");
+myForm.addEventListener("submit",addShop);
 
+function addShop(event){
+    event.preventDefault();
+    let shopName=event.target.shopName.value;
+    let maxC=event.target.maxCustomers.value;
+    let minC=event.target.minCustomer.value;
+    let AverageC=event.target.averageCookiePerCustomer.value;
+    let newShop= new Shop(shopName,maxC,minC,AverageC)
+    newShop.render();
+    console.log(newShop);
+    console.log(shops);
+    createFooter();
+    myForm.reset();
+
+}
 createHeader();
 seatle.render();
 Tokyo.render();
 Dubai.render();
 Paris.render();
 Lima.render();
-
 createFooter();
+
+
+
+
 
 
 

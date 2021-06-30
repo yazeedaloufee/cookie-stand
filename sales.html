@@ -9,8 +9,30 @@
     <link rel="stylesheet" href="css/sstyle.css">
 </head>
 <body>
-    <header><h1><a href="index.html">main page</a></h1></header>
+    <header><h1><a href="index.html">back to main page</a></h1></header>
     <div id="hours"></div>
+    <form action="" id="myForm">
+        <fieldset>
+            <legend>Adding a new shop</legend>
+
+            <label for="shopName">Shop name:</label>
+            <input type="text" name="shopName" id="shopName" placeholder="Shop name">
+
+            <label for="maxCustomers">Maximum Number of customers</label>
+            <input type="text" name="maxCustomers" id="maxCustomers" placeholder="Max customers Number">
+
+            <label for="minCustomer">Minimum Number of customers</label>
+            <input type="text" name="minCustomer" id="minCustomer" placeholder="Min customers Number">
+
+            <label for="averageCookiePerCustomer">Average number of cookies per customer</label>
+            <input type="text" name="averageCookiePerCustomer" id="averageCookiePerCustomer" placeholder="average Cookie Per Customer">
+            
+            <input type="submit" value="add shop">
+        
+        </fieldset>
+        <div id="container"></div>
+    </form>
+    
 
     
 </body>
